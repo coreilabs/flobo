@@ -17875,30 +17875,7 @@ ul {
   left: 0;
 }
 
-.circle-danger:before {
-  background: -o-radial-gradient(50% 50%, 50% 50%, rgba(255, 61, 37, 0.4) 0%, rgba(255, 0, 17, 0.15) 100%);
-  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 61, 37, 0.4) 0%, rgba(255, 0, 17, 0.15) 100%);
-}
 
-.circle-warning:before {
-  background: -o-linear-gradient(284.26deg, rgba(255, 186, 39, 0.25) 10.13%, rgba(255, 222, 152, 0.17) 86.62%);
-  background: linear-gradient(165.74deg, rgba(255, 186, 39, 0.25) 10.13%, rgba(255, 222, 152, 0.17) 86.62%);
-}
-
-.circle-cyan:before {
-  background: -o-radial-gradient(50% 50%, 75.86% 75.86%, rgba(0, 240, 255, 0.15) 0%, rgba(0, 240, 255, 0) 100%);
-  background: radial-gradient(75.86% 75.86% at 50% 50%, rgba(0, 240, 255, 0.15) 0%, rgba(0, 240, 255, 0) 100%);
-}
-
-.circle-primary:before {
-  background: -o-radial-gradient(50% 50%, 83.29% 83.29%, rgba(78, 146, 249, 0.25) 0%, rgba(78, 146, 249, 0.25) 100%);
-  background: radial-gradient(83.29% 83.29% at 50% 50%, rgba(78, 146, 249, 0.25) 0%, rgba(78, 146, 249, 0.25) 100%);
-}
-
-.circle-pink:before {
-  background: -o-radial-gradient(50% 50%, 89.01% 89.01%, rgba(197, 130, 219, 0.322) 0%, rgba(195, 130, 219, 0) 100%);
-  background: radial-gradient(89.01% 89.01% at 50% 50%, rgba(197, 130, 219, 0.322) 0%, rgba(195, 130, 219, 0) 100%);
-}
 
 .circle {
   position: relative;
@@ -18040,7 +18017,7 @@ ul {
   top: 0.375rem;
   left: 1.25rem;
 }
-
+/* 
 .shadow-danger:before {
   background-image: -o-linear-gradient(250deg, rgba(235, 100, 83, 0.134), rgba(235, 100, 83, 0.134));
   background-image: linear-gradient(200deg, rgba(235, 100, 83, 0.134), rgba(235, 100, 83, 0.134));
@@ -18099,7 +18076,7 @@ ul {
   right: auto;
   left: 0;
   margin-top: 37.5rem;
-}
+} */
 
 /*-----------------------------------------------
 |   Icons group
