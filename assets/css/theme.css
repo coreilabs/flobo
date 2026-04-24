@@ -18815,3 +18815,8 @@ body {
 .nav {
   color: blue !important;
 }
+
+.slider-column {
+  overflow: hidden;
+  position: relative;
+}

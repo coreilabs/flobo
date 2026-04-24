@@ -39,92 +39,86 @@ AOS.init({
   once: true
 });
 
+// const swiper = new Swiper(".swiper-slider", {
+//   loop: true,
+//   spaceBetween: 10,
+//   grabCursor: true,
+
+//   slidesPerView: 1,
+//   centeredSlides: true,
+
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//       centeredSlides: true,
+//     },
+//     640: {
+//       slidesPerView: 2,
+//       centeredSlides: false,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//       centeredSlides: false,
+//     }
+//   }
+// });
+
+
+
 
 const swiper = new Swiper(".swiper-slider", {
+
+  centeredSlides: true,
   slidesPerView: 1,
-  spaceBetween: 10,
+  grabCursor: true,
+  freeMode: false,
   loop: true,
+  mousewheel: false,
+  spaceBetween: 0,
+  keyboard: {
+    enabled: true
+  },
 
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true
-  // },
 
-    // Enabled autoplay mode
   autoplay: {
     delay: 2000,
     disableOnInteraction: false
   },
 
+
+
+
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-      dynamicBullets: false,
+    prevEl: ".swiper-button-prev"
   },
-
-  //   pagination: {
-//     el: ".swiper-pagination",
-//   
-//     clickable: true
-//   },
 
   breakpoints: {
     640: {
-      slidesPerView: 2,
-      spaceBetween: 10
+      slidesPerView: 1.25,
+      spaceBetween: 20
     },
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 15
+      slidesPerView: 2,
+      spaceBetween: 20
     }
   }
 });
-
-
-
-
-// const swiper = new Swiper(".swiper-slider", {
-
-//   centeredSlides: true,
-//   slidesPerView: 1,
-//   grabCursor: true,
-//   freeMode: false,
-//   loop: true,
-//   mousewheel: false,
-//   spaceBetween: 0,
-//   keyboard: {
-//     enabled: true
-//   },
-
-
-//   autoplay: {
-//     delay: 2000,
-//     disableOnInteraction: false
-//   },
-
-//   pagination: {
-//     el: ".swiper-pagination",
-//     dynamicBullets: false,
-//     clickable: true
-//   },
-
-
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev"
-//   },
-
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 1.25,
-//       spaceBetween: 20
-//     },
-//     1024: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     }
-//   }
-// });
 
 
 
