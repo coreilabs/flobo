@@ -106,6 +106,8 @@
 
 <br>
 
+
+
 <div class="text-center mb-3">
   <img  src="enxovalfeminino.png"
       
@@ -272,7 +274,7 @@
 </div>
 
 <!-- Indicador de swipe -->
-<div class="text-center mb-3">webp<img src="deslizar.jpg" 
+<div class="text-center mb-3"><img src="deslizar.jpg" 
        alt="Deslize para os lados" 
        class="img-fluid d-block mx-auto"
        style="max-width: 120px;">
@@ -293,6 +295,42 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
+
+function lazyLoadImages(selector = '.lazy-image', options = {}) {
+      const settings = {
+        threshold: 0.5,
+        ...options
+      };
+
+      const images = document.querySelectorAll(selector);
+
+      if (!('IntersectionObserver' in window)) {
+        // fallback simples
+        images.forEach(img => {
+          img.src = img.dataset.src;
+        });
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            observer.unobserve(img);
+          }
+        });
+      }, {
+        threshold: settings.threshold
+      });
+
+      images.forEach(img => observer.observe(img));
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      lazyLoadImages('.lazy-image', { threshold: 0.7 });
+    });
 
   
   const swiper = new Swiper(".mySwiper", {
@@ -315,7 +353,7 @@
   });
 
 
-
+lazyLoadImages();
 
 
 </script>
